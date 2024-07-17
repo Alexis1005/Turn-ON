@@ -1,0 +1,85 @@
+.date img{
+    width: 250px!important;
+    height: 250px!important;
+    border-radius: 50%!important;
+    object-fit: cover!important;
+    overflow: hidden!important;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+}
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.estrella1{
+    color: black;
+    margin: 30px 0 60px 0;
+}
+
+.div1{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hrr{
+    width: 90%;
+    border-width: 2px;
+    border-color: rgb(245, 208, 111);
+}
+
+.div2{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estrella{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.estrella i{
+    padding: 10px;
+    color: var(--color-letra);
+}
+
+.div3{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div4{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+    .div2, .div1{
+        width: 300px!important;
+        }
+    .hrr{
+        width: calc(100% - 60px); /* Ajuste del ancho del hr */
+        }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .div2, .div1{
+    width: 130px!important;
+    }
+    .hrr{
+    width: calc(100% - 10px); /* Ajuste del ancho del hr */
+    }
+}

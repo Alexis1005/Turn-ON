@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #7755338b;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8870bc5;
+}
+
+
+
+:root {
+  --color-letra: rgb(245, 208, 111);
+  --color_fondo : #1f1b1b;
+}
+
+body {
+  background-image: url(../Imágenes/fondo2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  margin: auto;
+  display: flex;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 3rem, 4.5rem)!important;
+  background-image: linear-gradient(
+    90deg,
+    rgb(238, 196, 89),
+    rgba(250, 230, 179, 0.753),
+    rgb(238, 196, 89)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.8px !important;
+  font-family: "Magra", sans-serif !important;
+  margin: auto;
+}
+
+header img {
+  margin-top: 10% ;
+  height: 90px;
+  width: 110px;
+  object-fit:contain;
+
+}
+.informacion-barbero {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% auto ;
+  width: 70%;
+  background-color: var(--color_fondo);
+  border-radius: 14px;
+  box-shadow: 0 0 35px rgba(255, 253, 253, 0.2);
+}
+
+
+.informacion-barbero .card {
+  margin: 2%;
+  display: flex;
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  background-color: var(--color_fondo);
+  box-shadow: 0 0 35px rgba(255, 253, 253, 0.2);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.informacion-barbero .image img {
+  width: 350px!important;
+  height: 350px!important;
+  border-radius: 50%!important;
+  object-fit: cover!important; 
+  object-position: center!important; 
+  overflow: hidden!important;
+}
+
+
+.informacion-barbero .info ul {
+  list-style: none;
+}
+
+.informacion-barbero .info li {
+  font-size: clamp(0.5rem, 1.2rem, 1.7rem)!important;
+  margin-bottom: 5px;
+  color: var(--color-letra);
+  line-height: 2.5;
+  letter-spacing: 1px;
+}
+.underline{
+  border-bottom: 0.6px solid rgb(245, 208, 111); /* Grosor y color del subrayado */
+  text-decoration: none; /* Quitar el subrayado por defecto */
+}
+.mapa {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin: 5% 0 2% 0;
+  background-color: var(--color_fondo);
+  box-shadow: 0 0 35px rgba(255, 253, 253, 0.2);
+  border-radius: 12px;
+}
+
+.informacion-barbero .mapa h2 {
+  background-color: #1f1b1b;
+  color: var(--color-letra);
+  font-family: san serif, "Magra";
+  font-size: clamp(1.5rem, 2.5rem, 4.5rem)!important;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #e3e4e5;
+}
+
+.foot1 {
+  margin: auto;
+}
+
+.foot1 p {
+  margin: 0px;
+  text-align: center;
+  overflow: hidden;
+  color: #090909c2;
+}
+
+
+.mundus {
+  width: 90px;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  padding-left: 20px;
+
+}
+.redes {
+  position: absolute;
+  right: 20px;
+}
+
+
+.redes a {
+  width: 58px;
+  padding: 0 5px 0 5px; /* Adjust icon width */ /* Adjust spacing between icons */
+}
+
+.red {
+  filter: hue-rotate(0deg);
+  transition: transform ease-in-out .3s;
+}
+
+.red:hover {
+  transform: scale(1.2);
+}
+
+
+/* Media query para pantallas menores a 768px de ancho */
+/* Media Queries para hacer que el diseño sea responsive */
+
+/* Pantallas más pequeñas que 768px (tablets en posición vertical y teléfonos) */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 3rem, 4.5rem)!important;
+    margin-top: 100px;
+  }
+
+  header a {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    
+  }
+
+  .informacion-barbero {
+    width: 90%;
+  }
+
+  .informacion-barbero .info li {
+    font-size: clamp(1rem, 1.5rem, 1.7rem)!important;
+  }  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+
+  .image img {
+    max-width: 100%;
+    margin: 5% 0 0 0;
+  }
+
+  .info {
+    margin: 0 0 !important;
+    text-align: center;
+  }
+
+  .mapa {
+    width: 90%;
+  }
+
+}
+
+/* Pantallas más pequeñas que 480px (teléfonos en posición vertical) */
+@media only screen and (max-width: 480px) {
+  header img {
+    margin-top: 10% ;
+    height: 70px;
+    width: 90px;
+    object-fit:contain;
+  
+  }
+  
+  .informacion-barbero .image img {
+    width: 300px!important;
+    height: 300px!important;
+    border-radius: 50%!important;
+    object-fit: cover!important; 
+    object-position: center!important; 
+    overflow: hidden!important;
+    margin: 15% 0 0 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.2rem
+
+  }
+  .informacion-barbero .info {
+    position: relative;
+    top: -50px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    height: auto;
+    background-color: #e3e4e5;
+  }
+  .mundus {
+    padding: 0 0 20px 0;
+  }  
+  .footer p{
+    position: relative;
+    left: 4%;
+    bottom: -60px;
+  }
+  .footer .redes{
+    position: relative;
+    padding: 15px 0;
+    left: 0.5%;
+    top: -40px;
+  }
+}
+
+

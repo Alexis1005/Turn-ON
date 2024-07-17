@@ -1,0 +1,378 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+:root{
+  --color-letra: rgb(245, 208, 111);
+}
+
+body {
+  font-family: 'Oswald', sans-serif; 
+  background: linear-gradient(360deg, #e3e4e5, rgb(250, 242, 144));
+  color: #1c0d02; 
+}
+/* primera sección (Logo y botón de reservar turno) */
+.seccion1 {
+  width: 100%;
+  background-image: url(../Imágenes/fondo2.png);
+  background-position: center;
+  background-size: cover;
+  color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.logo_page {
+  width: 275px;
+  height: 350px;
+  align-self: center;
+  margin-top: 10%;
+}
+
+.boton1{
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgb(250, 243, 163),  rgb(245, 208, 111));
+  border:#333 solid 0.8px;
+  color: #333;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1,6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-family: 'Magra', sans-serif;
+}
+
+.boton1:hover {
+  transform: scale(1.1);
+  background: #333;
+  color: var(--color-letra);
+  border: var(--color-letra) solid 0.8px;
+}
+
+
+
+/* Servicios de la página junto con la descripcion) */
+
+#services {
+  text-align: center;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.punto{
+  width: 96px;
+  display: block;
+}
+.punto2{
+  display: block;
+}
+
+.icono{
+  top: -10px;
+  width: 72px;
+  height: 80px;
+  visibility: visible;
+  filter: grayscale(50%);
+} 
+
+
+.text-img{
+  width: 100%;
+  display: flex;
+}
+
+.text-img img{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 700px;
+}
+
+.parrafo{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  line-height: 1.5;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url(../Imágenes/fondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e3e4e5;
+    text-align: center;
+  }
+  
+  .parrafo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+    background-position: center;
+    backdrop-filter: blur (20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    margin: auto;
+    overflow:auto;
+    height: 40%;
+    width: 90%;
+    font-size: 1.3rem!important;
+    color: rgba(250, 230, 179, 0.795);
+    font-weight: 300;
+    text-align: justify;
+    padding: 0 15px 0 15px;
+  }
+  
+  .parrafo h1{
+  font-size: clamp(1.5rem, 2.5rem, 4.5rem)!important;
+  margin-top: 50px;
+  margin-bottom: 0px!important;
+  background-image: linear-gradient(90deg, rgb(238, 196, 89),rgba(250, 230, 179, 0.753) , rgb(238, 196, 89));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -.8px!important;
+  font-family: 'Magra', sans-serif!important;
+}
+.parrafo img{
+  position: relative;
+  margin: 0 auto;
+  padding: 0%!important;
+  width: 94px;
+  height: 94px;
+  filter: grayscale(30%);
+  
+}
+
+/* --------------------- */
+
+.server{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0 70px 0;
+  padding: 0%;
+}
+
+.server h1{
+  font-size: clamp(1.5rem, 2.5rem, 4.5rem)!important;
+  margin-top: 50px;
+  margin-bottom: 0px!important;
+  letter-spacing: -.8px!important;
+  font-family: 'Magra', sans-serif!important;
+}
+
+.servicios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 250px;
+  background-image: url(../Imágenes/fondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  color: var(--color-letra);
+  padding: 1rem;
+  border-radius: 14px;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.service h2 {
+  position: relative;
+  top: 30%;
+  font-family: 'Teko', sans-serif!important;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+.service:hover{
+  background: url(../Imágenes/fondo-hover.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-color: black;
+  transform: scale(1.1);
+}
+
+.service:hover h2{
+  visibility: hidden;
+}
+.service:hover .icono{
+  visibility: hidden;
+}
+
+.service1:hover{
+  background: url(../Imágenes/barba.png);
+  background-size: cover;
+  background-color: black;
+  opacity: 1.5;
+}
+
+.service2:hover{
+  background: url(../Imágenes/tintura.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  opacity: 1.5;
+}
+
+
+
+/* seccion barberos */
+
+#barbers {
+  background-image: url(../Imágenes/fondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-letra) ;
+  display: flex;
+  flex-direction: column;
+}
+
+.punto2{
+  width: 72px;
+  filter: grayscale(30%);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.line{
+  width: 95%;
+  margin: 25px 0;
+  border-color: rgba(142, 140, 140, 0.171);
+  box-shadow: 0 2px 5px rgba(186, 184, 184, 0.4); 
+}
+.barberos{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.barberos h1{
+  font-size: clamp(1.5rem, 2.5rem, 4.5rem)!important;
+  letter-spacing: 2px;
+  margin: 20px 0 0 0!important;
+  font-family: 'Teko', sans-serif;
+}
+
+.barber h3{
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 10px 0 0 0;
+  font-family: 'Teko', sans-serif!important;
+
+}
+
+.fotosbarber{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 2rem;
+  gap: 20px;
+}
+
+
+.fotosbarber img{
+  width: 250px!important;
+  height: 250px!important;
+  border-radius: 50%!important;
+  object-fit: cover!important;
+  overflow: hidden!important;
+}
+
+.perfil, .barber, .barber h3{
+  transition:transform ease-in-out .3s ;
+}
+
+.barber:hover{
+   box-shadow: inset 0px 0px  20px 20px rgba(112, 111, 111, 0.171);
+   border-radius: 14px;
+}
+.barber:hover h3{
+  transform: scale(.8);
+}
+.perfil:hover{
+  transform: scale(.9);
+  filter: grayscale(50%);
+  cursor: pointer;
+}
+
+
+/* footer */
+.footer{
+  position: relative;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  color:  #090909c2;
+  align-items: center;
+}
+
+
+.footer p{
+  margin: 0px!important;
+  text-align: center;
+  overflow: hidden;
+}
+
+.foot1{
+ margin:auto
+}
+.mundus{
+  width: 90px;
+  object-fit: contain;
+ aspect-ratio: 3/2;
+  padding-left: 20px;
+}
+.redes{
+  position: absolute;
+  right: 20px;
+}
+
+.redes a{
+  width: 58px;
+  padding: 0 5px 0 5px;
+
+}
+
+.red{
+  filter: hue-rotate(0deg);
+  transition:transform ease-in-out .3s ;
+}
+.red:hover{
+  transform: scale(1.2)
+}

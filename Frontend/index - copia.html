@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/copia_prueba.css">
+  <link rel="stylesheet" href="CSS/mediaq.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconectar" href="https://fonts.googleapis.com">
+  <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https: //fonts.googleapis.com/css2? family= Magra:wght@700 & display=swap" rel="stylesheet">
+  <link rel="website icon" type="png" href="Imágenes/icono-web.png">
+  <title>Turn-ON</title>
+</head>
+
+<body>
+  <main>
+    <section class="seccion1">
+      <img src="Imágenes/logo_page.png" alt="Logo página" class="logo_page">
+      <button class="boton1" id="reservaAhora" href="#appointments">Reserva ahora</button>
+    </section>
+
+    <section id="appointments">
+      <h1>Reserva tu turno</h1>
+      <form id="booking-form">
+        <label for="barber">Barbero:</label>
+        <select id="barber" name="barber" required>
+          <option value="">Seleccione el barbero</option>
+          <option value="Jonathan Tommasi">Jonathan Tommasi</option>
+          <option value="Sebastian">Sebastian</option>
+          <option value="Zacarias">Zacarias</option>
+        </select>
+        
+        <label for="servicio">Servicios:</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Seleccione el servicio</option>
+          <option value="corte">Corte</option>
+          <option value="corte_barba">Corte y barba</option>
+          <option value="tintura">tintura</option>
+        </select>
+        
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" name="date" required>
+      
+        <label for="time">Hora:</label>
+        <input type="time" id="time" name="time" required>
+      
+        <label for="name">Nombre y Apellido:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <button type="submit">Reservar</button>
+      </form>
+      
+    </section>
+
+    <section id="services">
+      <div class="text-img">
+        <img src="Imágenes/parrafo.png" alt="">
+        <div class="parrafo">
+          <h1 class="sn">Sobre Nosotros</h1>
+          <div class="contenedor">
+            <div class="div3">
+              <hr class="hrr 3">
+            </div>
+            <div class="estrella"><i class="material-icons white"> star_rate </i></div>
+            <div class="div4">
+              <hr class="hrr 4">
+            </div>
+          </div>
+          <div class="parrafo1">
+            <p>
+              "Turn-ON es una página creada para para que los clientes puedan reservar un horario específico para
+              cortarse el cabello o hacerse la barba en la barbería de su elección. También permiten a los clientes ver
+              las horas disponibles, seleccionar a su barbero preferido y cancelar o reprogramar citas existentes"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="server">
+        <h1>Nuestros Servicios</h1>
+        <div class="contenedor1">
+          <div class="estrella1"><i class="material-icons white"> star_rate </i></div>
+          <div class="estrella1"><i class="material-icons white"> star_rate </i></div>
+          <div class="estrella1"><i class="material-icons white"> star_rate </i></div>
+        </div>
+        <!--         <img src="Imágenes/separador.png" class="punto">
+ -->
+      </div>
+      <div class="servicios">
+        <div class="service">
+          <img src="Imágenes/icono.png" class="icono">
+          <h2>CORTE DE CABELLO</h2>
+        </div>
+        <div class="service service1">
+          <img src="Imágenes/icono2.png" class="icono">
+          <h2>CORTE Y BARBA</h2>
+        </div>
+        <div class="service service2">
+          <img src="Imágenes/icono3.png" class="icono">
+          <h2>TINTURA</h2>
+        </div>
+      </div>
+    </section>
+    <section id="barbers">
+      <div class="barberos">
+        <h1>Nuestro Staff</h1>
+        <div class="contenedor">
+          <div class="div1">
+            <hr class="hrr 1">
+          </div>
+          <div class="estrella"><i class="material-icons white"> star_rate </i></div>
+          <div class="div2">
+            <hr class="hrr 2">
+          </div>
+        </div>
+      </div>
+      <div class="fotosbarber">
+        <div class="barber">
+          <a href="perfil_barber.html" target="_blank">
+            <img src="Imágenes/barbero.jpg" alt="Barbero 1" class="perfil">
+          </a>
+          <h3>JONATHAN TOMMASI</h3>
+        </div>
+        <div class="barber">
+          <a href="perfil_barber_1.html" target="_blank">
+            <img src="Imágenes/barbero1.jpg" alt="Barbero 2" class="perfil">
+          </a>
+          <h3>SEBASTIAN</h3>
+        </div>
+        <div class="barber">
+          <a href="perfil_barber_2.html" target="_blank">
+            <img src="Imágenes/barbero2.jpg" alt="Barbero 3" class="perfil">
+          </a>
+          <h3>ZACARIAS</h3>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="logopage">
+        <img src="Imágenes/mundus-novus.png" class="mundus" alt="">
+      </div>
+      <div class="foot1">
+        <p>&copy 2023 - todos los derechos reservados</p>
+      </div>
+      <div class="redes">
+        <a href="https://wa.me/3446416279" target="_blank"><img src="Imágenes/whatsapp.png" alt="whatsapp"
+            class="wp red"></a>
+        <a href="https://www.instagram.com/vespaalexis/" target="_blank"><img src="Imágenes/instagram.png"
+            title="instagram" class="red"></a>
+        <a href="mailto:alexis_1722@hotmail.es" target="_blank"><img src="Imágenes/email.png" title="correo-electronico"
+            class="red"></a>
+      </div>
+    </div>
+  </main>
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión / Registro de Barberos</title>
+    <link rel="stylesheet" href="CSS/estilo_form.css">
+  <link rel="website icon" type="png" href="Imágenes/icono-web.png">
+</head>
+
+<body>
+    <h1>Inicio de Sesión / Registro de Barberos</h1>
+    <div class="form-container">
+        <form id="loginOrRegisterForm">
+
+            <!-- Formulario de inicio de sesión o registro -->
+            <h2>Seleccionar acción</h2>
+
+            <!-- Campo de selección de acción -->
+            <select id="accion" onchange="toggleForm()">
+                <option value="login">Iniciar sesión</option>
+                <option value="registro">Registrarse</option>
+            </select>
+
+            <!-- Campos comunes para inicio de sesión y registro -->
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <!-- Campos adicionales para registro -->
+            <div class="res" id="registroFields" style="display: none;">
+                <label class="adicionales" for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label class="adicionales" for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <!-- Botón para enviar el formulario -->
+            <button id="submitButton" type="submit">Ingresa</button>
+        </form>
+    </div>
+
+    <!-- Popup para mostrar el mensaje de registro exitoso -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Registro exitoso! Revise su casilla de correo electrónico para ver su usuario y contraseña.</p>
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="javascript/formulario_registro_barbero.js"></script>
+</body>
+
+</html>
